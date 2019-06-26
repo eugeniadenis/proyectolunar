@@ -1,2 +1,0 @@
-# proyectolunar
-Juego Proyecto Lunar
