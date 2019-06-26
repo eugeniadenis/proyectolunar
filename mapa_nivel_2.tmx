@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="2019.04.25" orientation="orthogonal" renderorder="right-down" width="25" height="20" tilewidth="128" tileheight="128" infinite="0" nextlayerid="6" nextobjectid="1">
+ <tileset firstgid="1" name="nivel_dos" tilewidth="128" tileheight="128" tilecount="9" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="128" height="128" source="images/moneda22.png"/>
+  </tile>
+  <tile id="2">
+   <image width="128" height="128" source="images/tiles/planetCliff_left.png"/>
+  </tile>
+  <tile id="3">
+   <image width="128" height="128" source="images/tiles/planetCliff_right.png"/>
+  </tile>
+  <tile id="4">
+   <image width="128" height="128" source="images/tiles/waterTop_high.png"/>
+  </tile>
+  <tile id="5">
+   <image width="128" height="128" source="images/tiles/planetMid.png"/>
+  </tile>
+  <tile id="6">
+   <image width="128" height="128" source="images/tiles/boxCrate_double.png"/>
+  </tile>
+  <tile id="7">
+   <image width="128" height="128" source="images/tiles/bush.png"/>
+  </tile>
+  <tile id="8">
+   <image width="128" height="128" source="images/items/star.png"/>
+  </tile>
+  <tile id="9">
+   <image width="128" height="128" source="../../Desktop/ROCA1.png"/>
+  </tile>
+ </tileset>
+ <layer id="1" name="plataforma" width="25" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2BwA3Ya62NDwsTqY8OCSQHk6qOF/eS6YSAAKW4mN90QA2BmUyv8SPHXQMTbUEor7Ayk52FsfGLEsIkPJAAApekBWA==
+  </data>
+ </layer>
+ <layer id="3" name="fondo" width="25" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2B4AQ4oRmfT235kTIk5o2AUjHQwmpeIAwDFXwCB
+  </data>
+ </layer>
+ <layer id="4" name="frente" width="25" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFQxlwoeHhCDiHiL5RMLgAvnhkB2IOqBpy8s1oGhm8gJNh5MYPACKKAIo=
+  </data>
+ </layer>
+ <layer id="5" name="no tocar" width="25" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApGAS0BKx0wACE0AH4=
+  </data>
+ </layer>
+ <layer id="2" name="monedas" width="25" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4B8wAjF5OghRy81ADF209ttjGhsWthND/8MRHzSGpCSVtHV0ivMByov0QqQkkfR8w429kgBAHUMACM=
+  </data>
+ </layer>
+</map>

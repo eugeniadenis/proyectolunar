@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="2019.04.25" orientation="orthogonal" renderorder="right-down" width="25" height="20" tilewidth="128" tileheight="128" infinite="0" nextlayerid="7" nextobjectid="1">
+ <tileset firstgid="1" name="mi_patrones" tilewidth="128" tileheight="128" tilecount="7" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="1">
+   <image width="128" height="128" source="images/tiles/grassCliff_left.png"/>
+  </tile>
+  <tile id="2">
+   <image width="128" height="128" source="images/tiles/grassCliff_right.png"/>
+  </tile>
+  <tile id="3">
+   <image width="128" height="128" source="images/tiles/grassMid.png"/>
+  </tile>
+  <tile id="4">
+   <image width="128" height="128" source="images/tiles/boxCrate_single.png"/>
+  </tile>
+  <tile id="5">
+   <image width="128" height="128" source="images/tiles/ladderTop.png"/>
+  </tile>
+  <tile id="8">
+   <image width="128" height="128" source="images/moneda22.png"/>
+  </tile>
+  <tile id="9">
+   <image width="128" height="128" source="images/tiles/doorClosed_mid.png"/>
+  </tile>
+ </tileset>
+ <layer id="1" name="plataforma" width="25" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2B4ARYcmBlJDSsDwwFkGspGlmfgwmIusYAJj93odg0EgLmLngA9fKkF0MMaF6YHoHeYDkYAiw9QmicUz6SohQFs6nDpJUUtshwx5pGiFgSITafkYlAYAgDk4wK/
+  </data>
+ </layer>
+ <layer id="2" name="monedas" width="25" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFowACOAnQ2NQi8zlxqKXUHaOA9oATB5vaZo+CgQOkxgO+PE1OnJJaPtAj3QwXO2AAANkyANA=
+  </data>
+ </layer>
+ <layer id="4" name="fondo" width="25" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApGwVAHAAfQAAE=
+  </data>
+ </layer>
+ <layer id="5" name="frente" width="25" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApGwVAHAAfQAAE=
+  </data>
+ </layer>
+ <layer id="6" name="no tocar" width="25" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApGwVAHAAfQAAE=
+  </data>
+ </layer>
+</map>
