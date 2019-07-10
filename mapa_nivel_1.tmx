@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="2019.04.25" orientation="orthogonal" renderorder="right-down" width="25" height="20" tilewidth="128" tileheight="128" infinite="0" nextlayerid="7" nextobjectid="1">
+<map version="1.2" tiledversion="2019.04.25" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="128" tileheight="128" infinite="0" nextlayerid="12" nextobjectid="1">
  <tileset firstgid="1" name="mi_patrones" tilewidth="128" tileheight="128" tilecount="7" columns="0">
   <grid orientation="orthogonal" width="1" height="1"/>
   <tile id="1">
@@ -24,29 +24,29 @@
    <image width="128" height="128" source="images/tiles/doorClosed_mid.png"/>
   </tile>
  </tileset>
- <layer id="1" name="plataforma" width="25" height="20">
+ <layer id="7" name="plataforma" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2B4ARYcmBlJDSsDwwFkGspGlmfgwmIusYAJj93odg0EgLmLngA9fKkF0MMaF6YHoHeYDkYAiw9QmicUz6SohQFs6nDpJUUtshwx5pGiFgSITafkYlAYAgDk4wK/
+   eJzt11sKwjAQBdBBmx/3vyCXJgULITrE+IAQz4EhhdxCGco0jQAAWMOW1LnKlIhrvd6v6/24/Pg5Z7INZE+R93VXHu6AvuN94jvaeUZfO9uy4jN6CPM55t9+put9M0ay/+BZD7K+jGRXV5o12x/Nru7Vs8q71f7XAQAAAAAAMLcbt4cCvw==
   </data>
  </layer>
- <layer id="2" name="monedas" width="25" height="20">
+ <layer id="8" name="monedas" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFowACOAnQ2NQi8zlxqKXUHaOA9oATB5vaZo+CgQOkxgO+PE1OnJJaPtAj3QwXO2AAANkyANA=
+   eJzt1zEKwDAIBdCs3v/CHZNCNYRkKXlvUcHpD4KtAcA5Malfu+McyS5dlSnA30XSU5MVcJvVu1f9Gm7o2+pPJr898tsjPwAAAAAAAG7zANnLANA=
   </data>
  </layer>
- <layer id="4" name="fondo" width="25" height="20">
+ <layer id="9" name="fondo" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMApGwVAHAAfQAAE=
+   eJztwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAB4NjIAAAE=
   </data>
  </layer>
- <layer id="5" name="frente" width="25" height="20">
+ <layer id="10" name="frente" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMApGwVAHAAfQAAE=
+   eJztwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAB4NjIAAAE=
   </data>
  </layer>
- <layer id="6" name="no tocar" width="25" height="20">
+ <layer id="11" name="no tocar" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMApGwVAHAAfQAAE=
+   eJztwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAB4NjIAAAE=
   </data>
  </layer>
 </map>

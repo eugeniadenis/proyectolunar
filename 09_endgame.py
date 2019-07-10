@@ -6,7 +6,7 @@ import arcade
 # Constants
 SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 650
-SCREEN_TITLE = "Platformer"
+SCREEN_TITLE = "Proyecto Lunar"
 
 # Constants used to scale our sprites from their original size
 CHARACTER_SCALING = 0.7
@@ -112,12 +112,11 @@ class MyGame(arcade.Window):
         dont_touch_layer_name = "no tocar"
 
         # Map name
-        map_name = f"mapa_nivel_{3}.tmx"
+        map_name = f"mapa_nivel_{level}.tmx"
         # Read in the tiled map
         my_map = arcade.read_tiled_map(map_name, TILE_SCALING)
 
-        self.background = arcade.load_texture("images/fondo2copia.jpg")
-        self.background2 = arcade.load_texture("images/ghhjfkjkl.png")
+        self.background = arcade.load_texture("images/fondo1.jpg")
 
 
         # -- Walls
