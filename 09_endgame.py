@@ -6,7 +6,7 @@ import arcade
 # Constants
 SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 650
-SCREEN_TITLE = "Platformer"
+SCREEN_TITLE = "Proyecto Lunar"
 
 # Constants used to scale our sprites from their original size
 CHARACTER_SCALING = 0.7

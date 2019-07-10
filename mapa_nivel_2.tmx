@@ -27,12 +27,17 @@
    <image width="128" height="128" source="images/items/star.png"/>
   </tile>
   <tile id="9">
-   <image width="128" height="128" source="../../Desktop/ROCA1.png"/>
+   <image source="../../Desktop/ROCA1.png"/>
   </tile>
  </tileset>
  <layer id="1" name="plataforma" width="25" height="20">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2BwA3Ya62NDwsTqY8OCSQHk6qOF/eS6YSAAKW4mN90QA2BmUyv8SPHXQMTbUEor7Ayk52FsfGLEsIkPJAAApekBWA==
+  </data>
+ </layer>
+ <layer id="2" name="monedas" width="25" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo4B8wAjF5OghRy81ADF209ttjGhsWthND/8MRHzSGpCSVtHV0ivMByov0QqQkkfR8w429kgBAHUMACM=
   </data>
  </layer>
  <layer id="3" name="fondo" width="25" height="20">
@@ -48,11 +53,6 @@
  <layer id="5" name="no tocar" width="25" height="20">
   <data encoding="base64" compression="zlib">
    eJxjYBgFo2AUjIJRMApGAS0BKx0wACE0AH4=
-  </data>
- </layer>
- <layer id="2" name="monedas" width="25" height="20">
-  <data encoding="base64" compression="zlib">
-   eJxjYBgFo4B8wAjF5OghRy81ADF209ttjGhsWthND/8MRHzSGpCSVtHV0ivMByov0QqQkkfR8w429kgBAHUMACM=
   </data>
  </layer>
 </map>
