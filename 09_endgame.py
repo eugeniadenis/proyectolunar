@@ -9,7 +9,7 @@ SCREEN_HEIGHT = 650
 SCREEN_TITLE = "Proyecto Lunar"
 
 # Constants used to scale our sprites from their original size
-CHARACTER_SCALING = 0.7
+CHARACTER_SCALING = 0.2
 TILE_SCALING = 0.5
 COIN_SCALING = 0.5
 SPRITE_PIXEL_SIZE = 128
@@ -93,7 +93,7 @@ class MyGame(arcade.Window):
         self.coin_list = arcade.SpriteList()
 
         # Set up the player, specifically placing it at these coordinates.
-        self.player_sprite = arcade.Sprite("images/player_1/player_stand.png", CHARACTER_SCALING)
+        self.player_sprite = arcade.Sprite("images/player_1/luna1.png", CHARACTER_SCALING)
         self.player_sprite.center_x = PLAYER_START_X
         self.player_sprite.center_y = PLAYER_START_Y
         self.player_list.append(self.player_sprite)

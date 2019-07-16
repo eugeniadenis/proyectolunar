@@ -1,37 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.2" tiledversion="2019.04.25" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="128" tileheight="128" infinite="0" nextlayerid="12" nextobjectid="1">
- <tileset firstgid="1" name="mi_patrones" tilewidth="128" tileheight="128" tilecount="7" columns="0">
+ <tileset firstgid="1" name="mi_patrones" tilewidth="129" tileheight="138" tilecount="14" columns="0">
   <grid orientation="orthogonal" width="1" height="1"/>
-  <tile id="1">
-   <image width="128" height="128" source="images/tiles/grassCliff_left.png"/>
+  <tile id="10">
+   <image width="129" height="127" source="../../Desktop/asteroide 128x128.png"/>
   </tile>
-  <tile id="2">
-   <image width="128" height="128" source="images/tiles/grassCliff_right.png"/>
+  <tile id="11">
+   <image width="129" height="129" source="../../Desktop/asteroide grande inf der.png"/>
   </tile>
-  <tile id="3">
-   <image width="128" height="128" source="images/tiles/grassMid.png"/>
+  <tile id="12">
+   <image width="129" height="129" source="../../Desktop/asteroide grande inf izq.png"/>
   </tile>
-  <tile id="4">
-   <image width="128" height="128" source="images/tiles/boxCrate_single.png"/>
+  <tile id="13">
+   <image width="129" height="129" source="../../Desktop/asteroide grande sup der.png"/>
   </tile>
-  <tile id="5">
-   <image width="128" height="128" source="images/tiles/ladderTop.png"/>
+  <tile id="14">
+   <image width="129" height="129" source="../../Desktop/asteroide grande sup izq.png"/>
   </tile>
-  <tile id="8">
-   <image width="128" height="128" source="images/moneda22.png"/>
+  <tile id="15">
+   <image width="129" height="129" source="../../Desktop/asteroide2 128x128.png"/>
   </tile>
-  <tile id="9">
-   <image width="128" height="128" source="images/tiles/doorClosed_mid.png"/>
+  <tile id="16">
+   <image width="129" height="129" source="../../Desktop/asteroides 128x128.png"/>
+  </tile>
+  <tile id="17">
+   <image width="129" height="129" source="../../Desktop/nave rota abajo.png"/>
+  </tile>
+  <tile id="18">
+   <image width="129" height="129" source="../../Desktop/nave rota arriba.png"/>
+  </tile>
+  <tile id="19">
+   <image width="40" height="65" source="../../Desktop/parte de la luna.png"/>
+  </tile>
+  <tile id="20">
+   <image width="82" height="101" source="../../Desktop/parte de la luna_2.png"/>
+  </tile>
+  <tile id="21">
+   <image width="112" height="138" source="../../Desktop/parte de la luna_3.png"/>
+  </tile>
+  <tile id="22">
+   <image width="103" height="98" source="../../Desktop/parte de la luna_4.png"/>
+  </tile>
+  <tile id="23">
+   <image width="128" height="128" source="images/tiles/brickGrey.png"/>
   </tile>
  </tileset>
  <layer id="7" name="plataforma" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   eJzt11sKwjAQBdBBmx/3vyCXJgULITrE+IAQz4EhhdxCGco0jQAAWMOW1LnKlIhrvd6v6/24/Pg5Z7INZE+R93VXHu6AvuN94jvaeUZfO9uy4jN6CPM55t9+put9M0ay/+BZD7K+jGRXV5o12x/Nru7Vs8q71f7XAQAAAAAAMLcbt4cCvw==
+   eJzt2kEJADAQA8GTcf6V1kP3USgzEAP7zs7MWhp39Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gte//5/2AGepxYh
   </data>
  </layer>
  <layer id="8" name="monedas" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   eJzt1zEKwDAIBdCs3v/CHZNCNYRkKXlvUcHpD4KtAcA5Malfu+McyS5dlSnA30XSU5MVcJvVu1f9Gm7o2+pPJr898tsjPwAAAAAAAG7zANnLANA=
+   eJzt10EOgCAMBECeoBf//1QvXk3AKCw4k3AuacmSlgKQa+tc7+hcr1XvflBv9GzS3y4wt9EZl+rL7J0h1/fr8Jwe8jZ5zYrkJABkm2F/BViN/T+DP/C/zB6gXWJ2Jt4J7tgBxpEVpDoBwmABog==
   </data>
  </layer>
  <layer id="9" name="fondo" width="80" height="40">
@@ -46,7 +67,7 @@
  </layer>
  <layer id="11" name="no tocar" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAB4NjIAAAE=
+   eJzt2EsOgCAMRVEW4N/971WNQyfgC7a19yRMTYPtAy0FQCaLdQFBzOeaOjw3y/6P5xqsi0hktS4ADx7eSa8cy4IcQy1mTWM9azV3Mw+ZDp/oDQ37lw9npsb6zPwKfaLJ0ieIj3vA/7Tmd5b/5LXIbyi4P2mYv9tmXcBP7NYFOHf1mfUeqXcQMldD5iIqr7O/lBjfVq2zzz8DeNPak956OEJOAHjnAKn5A0o=
   </data>
  </layer>
 </map>
