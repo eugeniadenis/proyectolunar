@@ -10,6 +10,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FUSProjectUsageTrigger">
     <session id="2110004334">
       <usages-collector id="statistics.lifecycle.project">
@@ -94,6 +95,8 @@
       </usages-collector>
     </session>
   </component>
+=======
+>>>>>>> origin/master
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -108,6 +111,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/09_endgame.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="457">
               <caret line="110" column="25" lean-forward="true" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
             </state>
@@ -128,6 +132,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="4092">
               <caret line="195" selection-start-line="195" selection-end-line="195" />
+=======
+            <state relative-caret-position="120">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+>>>>>>> origin/master
             </state>
           </provider>
         </entry>
@@ -137,6 +145,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>level</find>
+      <find>self.level</find>
+      <find>score</find>
+      <find>luna</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,6 +180,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,10 +192,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -332,6 +344,7 @@
       <option name="presentableId" value="Default" />
       <updated>1556126406529</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00001" summary="Quité los mapas y cambié el titulo.">
       <created>1562779567130</created>
       <option name="number" value="00001" />
@@ -352,20 +365,50 @@
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
       <updated>1563299504515</updated>
+=======
+    <task id="LOCAL-00001" summary="se cambio el porcentaje de score por variable luna">
+      <created>1562699171934</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562699171934</updated>
+    </task>
+    <task id="LOCAL-00002" summary="se cambio el porcentaje de score por variable luna">
+      <created>1562779747471</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1562779747471</updated>
+    </task>
+    <task id="LOCAL-00003" summary="se cambio el porcentaje de score por variable luna">
+      <created>1562780095620</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1562780095620</updated>
+>>>>>>> origin/master
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+=======
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+>>>>>>> origin/master
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20461309" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19529262" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.06122449" />
+=======
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.053072624" />
+>>>>>>> origin/master
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39965987" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -398,8 +441,9 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="se cambio el porcentaje de score por variable luna" />
+    <option name="LAST_COMMIT_MESSAGE" value="se cambio el porcentaje de score por variable luna" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Quité los mapas y cambié el titulo." />
@@ -424,7 +468,13 @@
     <entry file="file://$PROJECT_DIR$/04_add_gravity.py" />
     <entry file="file://$PROJECT_DIR$/03_user_control.py" />
     <entry file="file://$PROJECT_DIR$/02_draw_sprites.py" />
-    <entry file="file://$PROJECT_DIR$/map2.tmx" />
+    <entry file="file://$PROJECT_DIR$/map2.tmx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/01_open_window.py" />
     <entry file="file://$PROJECT_DIR$/08_load_map.py" />
     <entry file="file://$PROJECT_DIR$/05_scrolling.py" />
@@ -436,6 +486,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/PIL/Image.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61028">
@@ -454,8 +505,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
           <caret line="110" column="25" lean-forward="true" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
+=======
+    <entry file="file://$PROJECT_DIR$/09_endgame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+>>>>>>> origin/master
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

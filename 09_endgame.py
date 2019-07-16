@@ -61,8 +61,8 @@ class MyGame(arcade.Window):
         self.view_bottom = 0
         self.view_left = 0
 
-        # Keep track of the score
-        self.score = 0
+        # Keep track of the luna
+        self.luna = 0
 
         # Where is the right edge of the map?
         self.end_of_map = 0
@@ -82,8 +82,8 @@ class MyGame(arcade.Window):
         self.view_bottom = 0
         self.view_left = 0
 
-        # Keep track of the score
-        self.score = 0
+        # Keep track of the luna
+        self.luna = 0
 
         # Create the Sprite lists
         self.player_list = arcade.SpriteList()
@@ -112,11 +112,12 @@ class MyGame(arcade.Window):
         dont_touch_layer_name = "no tocar"
 
         # Map name
-        map_name = f"mapa_nivel_{level}.tmx"
+        map_name = f"mapa_nivel_{self.level}.tmx"
         # Read in the tiled map
         my_map = arcade.read_tiled_map(map_name, TILE_SCALING)
 
         self.background = arcade.load_texture("images/fondo1.jpg")
+        self.background2 = arcade.load_texture("images/fondo3.jpg")
 
 
         # -- Walls
@@ -179,9 +180,9 @@ class MyGame(arcade.Window):
         self.player_list.draw()
         self.foreground_list.draw()
 
-        # Draw our score on the screen, scrolling it with the viewport
-        score_text = f"Score: {self.score}"
-        arcade.draw_text(score_text, 10 + self.view_left, 10 + self.view_bottom,
+        # Draw our luna on the screen, scrolling it with the viewport
+        luna_text = f"luna: {self.luna}"
+        arcade.draw_text(luna_text, 10 + self.view_left, 10 + self.view_bottom,
                          arcade.csscolor.YELLOW, 18)
 
     def on_key_press(self, key, modifiers):
@@ -226,8 +227,9 @@ class MyGame(arcade.Window):
             coin.remove_from_sprite_lists()
             # Play a sound
             arcade.play_sound(self.collect_coin_sound)
-            # Add one to the score
-            self.score += 1
+            # Add one to the luna
+            self.luna += 1
+
 
         # Track if we need to change the viewport
         changed_viewport = False
@@ -255,9 +257,22 @@ class MyGame(arcade.Window):
             arcade.play_sound(self.game_over)
 
         # See if the user got to the end of the level
-        if self.player_sprite.center_x >= self.end_of_map:
+        if self.luna == 10 and self.level == 1:
             # Advance to the next level
-            self.level += 1
+            self.level = 2
+
+            # Load the next level
+            self.setup(self.level)
+
+            # Set the camera to the start
+            self.view_left = 0
+            self.view_bottom = 0
+            changed_viewport = True
+
+        # See if the user got to the end of the level
+        if self.luna == 20 and self.level==2:
+            # Advance to the next level
+            self.level = 3
 
             # Load the next level
             self.setup(self.level)
