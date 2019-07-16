@@ -2,72 +2,72 @@
 <map version="1.2" tiledversion="2019.04.25" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="128" tileheight="128" infinite="0" nextlayerid="13" nextobjectid="1">
  <tileset firstgid="1" name="mi_patrones" tilewidth="129" tileheight="138" tilecount="14" columns="0">
   <grid orientation="orthogonal" width="1" height="1"/>
-  <tile id="10">
-   <image width="129" height="127" source="../../Desktop/asteroide 128x128.png"/>
+  <tile id="32">
+   <image width="129" height="127" source="images/tiles/asteroide 128x128.png"/>
   </tile>
-  <tile id="11">
-   <image width="129" height="129" source="../../Desktop/asteroide grande inf der.png"/>
+  <tile id="33">
+   <image width="129" height="129" source="images/tiles/asteroide grande inf der.png"/>
   </tile>
-  <tile id="12">
-   <image width="129" height="129" source="../../Desktop/asteroide grande inf izq.png"/>
+  <tile id="34">
+   <image width="129" height="129" source="images/tiles/asteroide grande inf izq.png"/>
   </tile>
-  <tile id="13">
-   <image width="129" height="129" source="../../Desktop/asteroide grande sup der.png"/>
+  <tile id="35">
+   <image width="129" height="129" source="images/tiles/asteroide grande sup der.png"/>
   </tile>
-  <tile id="14">
-   <image width="129" height="129" source="../../Desktop/asteroide grande sup izq.png"/>
+  <tile id="36">
+   <image width="129" height="129" source="images/tiles/asteroide grande sup izq.png"/>
   </tile>
-  <tile id="15">
-   <image width="129" height="129" source="../../Desktop/asteroide2 128x128.png"/>
+  <tile id="37">
+   <image width="129" height="129" source="images/tiles/asteroide2 128x128.png"/>
   </tile>
-  <tile id="16">
-   <image width="129" height="129" source="../../Desktop/asteroides 128x128.png"/>
+  <tile id="38">
+   <image width="129" height="129" source="images/tiles/asteroides 128x128.png"/>
   </tile>
-  <tile id="17">
-   <image width="129" height="129" source="../../Desktop/nave rota abajo.png"/>
-  </tile>
-  <tile id="18">
-   <image width="129" height="129" source="../../Desktop/nave rota arriba.png"/>
-  </tile>
-  <tile id="19">
-   <image width="40" height="65" source="../../Desktop/parte de la luna.png"/>
-  </tile>
-  <tile id="20">
-   <image width="82" height="101" source="../../Desktop/parte de la luna_2.png"/>
-  </tile>
-  <tile id="21">
-   <image width="112" height="138" source="../../Desktop/parte de la luna_3.png"/>
-  </tile>
-  <tile id="22">
-   <image width="103" height="98" source="../../Desktop/parte de la luna_4.png"/>
-  </tile>
-  <tile id="23">
+  <tile id="39">
    <image width="128" height="128" source="images/tiles/brickGrey.png"/>
   </tile>
+  <tile id="40">
+   <image width="129" height="129" source="images/tiles/nave rota abajo.png"/>
+  </tile>
+  <tile id="41">
+   <image width="129" height="129" source="images/tiles/nave rota arriba.png"/>
+  </tile>
+  <tile id="42">
+   <image width="40" height="65" source="images/items/parte de la luna.png"/>
+  </tile>
+  <tile id="43">
+   <image width="82" height="101" source="images/items/parte de la luna_2.png"/>
+  </tile>
+  <tile id="44">
+   <image width="112" height="138" source="images/items/parte de la luna_3.png"/>
+  </tile>
+  <tile id="45">
+   <image width="103" height="98" source="images/items/parte de la luna_4.png"/>
+  </tile>
  </tileset>
- <layer id="7" name="plataforma" width="80" height="40">
+ <layer id="7" name="plataforma" width="80" height="40" visible="0" locked="1">
   <data encoding="base64" compression="zlib">
-   eJzt2kEJADAQA8GTcf6V1kP3USgzEAP7zs7MWhp39Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gv0a/Rr9Gte//5/2AGepxYh
+   eJzt2sENgCAQAEFa8Wf/FdqDqyg6k9zbZHNBHuxjjN2k4Rz9Gv0a/Rr9Gv0a/Rr9Gv2amf22Sd+Zyf41+jX6Nfo1+jX6NW/st9I95439VqJfo1+jX3N1v5XO/ivYv0a/Rr9Gv0a/5q5+f/kP279Gv0a/Rr9Gv0a/Rr9Gv0a/Rr/m6Xf/X5gDvbElZQ==
   </data>
  </layer>
- <layer id="8" name="monedas" width="80" height="40">
+ <layer id="8" name="monedas" width="80" height="40" visible="0" locked="1">
   <data encoding="base64" compression="zlib">
-   eJzt18EJACAMA0CncP9RfTmAghrp3QSBlpS2BsDUXweATXYX4L6T3avXAQAA+IH/FYCq3MC6zB5gXWJ3JmYC8ugKUg2X5QDd
+   eJzt1rsNACAIBUAGcv/5jIW9WggJdxO8hG8EANvIDgCP9C6LPoC/zBwAAFX4TYEs9g8AXbmBfak9wL2Ku7NiJgA4NQGvJQG5
   </data>
  </layer>
  <layer id="9" name="fondo" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAB4NjIAAAE=
+   eJzt1ksKwCAMBcCepd/737AeoItSLEl0BrKVJ8iLywJARlfn887O50UY4Q7MwVvlL713A/CNnn+mo4Ao+mc+EbvY/uerDG8nQwbIxN+BEVXo+goZgRz0BW8dbfboEIVtbdboEMAUqu/26vmBMd1hCQNA
   </data>
  </layer>
  <layer id="10" name="frente" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAB4NjIAAAE=
+   eJzt1kEKwCAMBEDfYmv//8R69VDQthCCM5CjEHAXUgoA5HRFLwAAwC++3HUzb92N+/HnsEZnkAEyecqrHEOc2f7pKatkBkY6AaPW54xeIrGjT41eAgCAV24RnwJ9
   </data>
  </layer>
  <layer id="11" name="no tocar" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   eJzt2kkShDAIBVAO4Oz976qWLtxpyMCH/FeVrZ2CgKgtQkQ9Waw34MR8rqnCdXuJ/3iuwXoTha3PQmS5L9SYWEOIS60+1ouIfSwXwrlGFLnWWuTcutb+zGbaOLBm9JDnrjfUPTJ+hEp7z2Qfvmnvmav46QuXyLNVCm2+Ws5WXs4UYeL5iSe1f2vek0c+N9bPxjVFzhsKzk95vNdfqVl/K3ANEtmtNwDuOmfWMcr9Vs+em8d7z6V+odb+Ij7+g5Ra+3yGuDEOOFJz0Tp3X7/noU8Qkc4BaZYE0Q==
+   eJzt2T0OgCAMgFHO4h/B+x9QBtlQiNC04PeSTg6W2DaAzgGY3aGdAFBphlrVXoP2+3uZZR0j8ndY5p1+ntQoktpaCDFOyUQgapRvx2zCCKzvM5LDPfdUbibQf0Afe4xNOwkMjXkMadRY3hpj0U7CoFB4rn2/lWMtHwB9lebSH7Xe+3GGafNlDyG9H6NPbGDfDchr6bOZevTtXwBQYvEMTT0D/3EBxZwG5w==
   </data>
  </layer>
 </map>
