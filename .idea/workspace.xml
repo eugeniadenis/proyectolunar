@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5c19274-eb0f-48ed-ace2-5cb49e637478" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mapa_nivel_1.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/mapa_nivel_1.tmx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,14 +72,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="60" />
+          <entry key="py" value="69" />
           <entry key="txt" value="65" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="65" />
-          <entry key="Python" value="60" />
+          <entry key="Python" value="69" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -108,8 +108,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/09_endgame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6908">
-              <caret line="314" lean-forward="true" selection-start-line="314" selection-end-line="314" />
+            <state relative-caret-position="457">
+              <caret line="110" column="25" lean-forward="true" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -346,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563298249328</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Quité los mapas y cambié el titulo.">
+      <created>1563299504515</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1563299504515</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -358,7 +365,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3809524" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.06122449" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39965987" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -445,8 +452,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/09_endgame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6908">
-          <caret line="314" lean-forward="true" selection-start-line="314" selection-end-line="314" />
+        <state relative-caret-position="457">
+          <caret line="110" column="25" lean-forward="true" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
         </state>
       </provider>
     </entry>
