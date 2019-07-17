@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="2019.04.25" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="128" tileheight="128" infinite="0" nextlayerid="13" nextobjectid="1">
+<map version="1.2" tiledversion="2019.04.25" orientation="orthogonal" renderorder="right-down" width="67" height="31" tilewidth="128" tileheight="128" infinite="0" nextlayerid="18" nextobjectid="1">
  <tileset firstgid="1" name="mi_patrones" tilewidth="129" tileheight="138" tilecount="14" columns="0">
   <grid orientation="orthogonal" width="1" height="1"/>
   <tile id="32">
@@ -45,29 +45,29 @@
    <image width="103" height="98" source="images/items/parte de la luna_4.png"/>
   </tile>
  </tileset>
- <layer id="7" name="plataforma" width="80" height="40" visible="0" locked="1">
+ <layer id="13" name="plataforma" width="67" height="31">
   <data encoding="base64" compression="zlib">
-   eJzt2sENgCAQAEFa8Wf/FdqDqyg6k9zbZHNBHuxjjN2k4Rz9Gv0a/Rr9Gv0a/Rr9Gv2amf22Sd+Zyf41+jX6Nfo1+jX6NW/st9I95439VqJfo1+jX3N1v5XO/ivYv0a/Rr9Gv0a/5q5+f/kP279Gv0a/Rr9Gv0a/Rr9Gv0a/Rr/m6Xf/X5gDvbElZQ==
+   eJzt2UEKgCAQQFGv0s5F9z9fu76rgjBn1P9g1sJnQKNaSqnOPbJFK2uLM+DMrC0i2AK2gC1gC+zeor2vRrY4Bp3z1e570bIFbIGoFhFv7DfuBWyBjC2i7t6MLaLYAraALdC7RfZvjifuBVZp0eMdu0qLHmwBW+CvFjPeJ+4Fov9pZ5sLP3YfNQ==
   </data>
  </layer>
- <layer id="8" name="monedas" width="80" height="40" visible="0" locked="1">
+ <layer id="14" name="monedas" width="67" height="31">
   <data encoding="base64" compression="zlib">
-   eJzt1rsNACAIBUAGcv/5jIW9WggJdxO8hG8EANvIDgCP9C6LPoC/zBwAAFX4TYEs9g8AXbmBfak9wL2Ku7NiJgA4NQGvJQG5
+   eJzt1jENAAAIAzAE4V8fHnjISKtgB1uoAtjr6wC846aABLYKAEjlj4HfdBwgny0n0QAf8wEJ
   </data>
  </layer>
- <layer id="9" name="fondo" width="80" height="40">
+ <layer id="15" name="fondo" width="67" height="31">
   <data encoding="base64" compression="zlib">
-   eJzt1ksKwCAMBcCepd/737AeoItSLEl0BrKVJ8iLywJARlfn887O50UY4Q7MwVvlL713A/CNnn+mo4Ao+mc+EbvY/uerDG8nQwbIxN+BEVXo+goZgRz0BW8dbfboEIVtbdboEMAUqu/26vmBMd1hCQNA
+   eJzt1YENgDAMA7BdA/9/yBFUIyz2AdWkrslaAGe4h+ddw/PeSnsP/+MP9ZnORUjWkHFuGs7mxnN80SkNPdbGTmmlz9hpd9bKdsjiJrM8BWACQA==
   </data>
  </layer>
- <layer id="10" name="frente" width="80" height="40">
+ <layer id="16" name="frente" width="67" height="31">
   <data encoding="base64" compression="zlib">
-   eJzt1kEKwCAMBEDfYmv//8R69VDQthCCM5CjEHAXUgoA5HRFLwAAwC++3HUzb92N+/HnsEZnkAEyecqrHEOc2f7pKatkBkY6AaPW54xeIrGjT41eAgCAV24RnwJ9
+   eJzt1tEJACAIBcCmaf8RmyAQDFK5+xeE9wTXAqCj/XsBAKCNzN8QmfWX1CELptDlumTDC7ce6RfTRTvuFuaQJV3oKlkHjXQB7w==
   </data>
  </layer>
- <layer id="11" name="no tocar" width="80" height="40">
+ <layer id="17" name="no tocar" width="67" height="31">
   <data encoding="base64" compression="zlib">
-   eJzt2T0OgCAMgFHO4h/B+x9QBtlQiNC04PeSTg6W2DaAzgGY3aGdAFBphlrVXoP2+3uZZR0j8ndY5p1+ntQoktpaCDFOyUQgapRvx2zCCKzvM5LDPfdUbibQf0Afe4xNOwkMjXkMadRY3hpj0U7CoFB4rn2/lWMtHwB9lebSH7Xe+3GGafNlDyG9H6NPbGDfDchr6bOZevTtXwBQYvEMTT0D/3EBxZwG5w==
+   eJzt2N0KgCAMhuFdSz+K3f8F5kEgQWGYMqfvAzvqZNg+xIkAqMFpNwDzmKE7zmNc/qqeeanbJ/M8pq//NcQ6WjYyKStnSv5hjZP3uX3KHTMOS/ZYm3YTnVhjLdpNAJWR8WSGjIfM99a7h973GoAFuRxb93dvwb2WlNxrrd+qo89viRMFVQWr
   </data>
  </layer>
 </map>
