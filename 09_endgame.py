@@ -2,7 +2,7 @@
 Platformer Game
 """
 import arcade
-
+import time
 # Constants
 SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 650
@@ -70,6 +70,9 @@ class MyGame(arcade.Window):
         # Level
         self.level = 1
 
+        #Vidas
+        self.vidas = 3
+
         # Load sounds
         self.collect_coin_sound = arcade.load_sound("sounds/coin1.wav")
         self.jump_sound = arcade.load_sound("sounds/jump1.wav")
@@ -84,6 +87,9 @@ class MyGame(arcade.Window):
 
         # Keep track of the luna
         self.luna = 0
+
+        #Vidas
+        self.vidas = 3
 
         # Create the Sprite lists
         self.player_list = arcade.SpriteList()
@@ -112,7 +118,10 @@ class MyGame(arcade.Window):
         dont_touch_layer_name = "no tocar"
 
         # Map name
-        map_name = f"mapa_nivel_{self.level}.tmx"
+        if self.level ==-1:
+            map_name = 'game_over.tmx'
+        else:
+            map_name = f"mapa_nivel_{self.level}.tmx"
         # Read in the tiled map
         my_map = arcade.read_tiled_map(map_name, TILE_SCALING)
 
@@ -177,16 +186,30 @@ class MyGame(arcade.Window):
         self.wall_list.draw()
         self.coin_list.draw()
         self.dont_touch_list.draw()
-        self.player_list.draw()
         self.foreground_list.draw()
 
+        if self.level != -1:
+            self.player_list.draw()
+
         # Draw our luna on the screen, scrolling it with the viewport
-        luna_text = f"luna: {self.luna}"
-        arcade.draw_text(luna_text, 10 + self.view_left, 10 + self.view_bottom,
+        if self.level != -1:
+            luna_text = f"luna: {self.luna}"
+            arcade.draw_text(luna_text, 10 + self.view_left, 10 + self.view_bottom,
                          arcade.csscolor.YELLOW, 18)
+
+        #MOSTRAR LA CANTIDAD DE VIDAS
+        if self.level != -1:
+            vidas_text = f"vidas: {self.vidas}"
+            arcade.draw_text(vidas_text, 5 + self.view_left, self.view_bottom + SCREEN_HEIGHT -30,
+                        arcade.csscolor.YELLOW, 18)
+
+
 
     def on_key_press(self, key, modifiers):
         """Called whenever a key is pressed. """
+        if self.level ==-1:
+            self.level =1
+            self.setup(1)
 
         if key == arcade.key.UP or key == arcade.key.W:
             self.player_sprite.change_y = PLAYER_JUMP_SPEED
@@ -245,7 +268,7 @@ class MyGame(arcade.Window):
             changed_viewport = True
             arcade.play_sound(self.game_over)
 
-        # Did the player touch something they should not?
+        # Cuando el jugador toca algo que no deberia.
         if arcade.check_for_collision_with_list(self.player_sprite, self.dont_touch_list):
             self.player_sprite.center_x = PLAYER_START_X
             self.player_sprite.center_y = PLAYER_START_Y
@@ -255,6 +278,15 @@ class MyGame(arcade.Window):
             self.view_bottom = 0
             changed_viewport = True
             arcade.play_sound(self.game_over)
+
+            #Quitar una vida y verificar si llega  0 vidas.
+            self.vidas -=1
+
+            #Si llega a 0 vidas volver a comenzar el juego.
+        if self.vidas == 0:
+            self.level =-1
+            self.setup(self.level)
+
 
         # See if the user got to the end of the level
         if self.luna == 10 and self.level == 1:
