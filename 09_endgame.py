@@ -16,9 +16,9 @@ SPRITE_PIXEL_SIZE = 128
 GRID_PIXEL_SIZE = (SPRITE_PIXEL_SIZE * TILE_SCALING)
 
 # Movement speed of player, in pixels per frame
-PLAYER_MOVEMENT_SPEED =5
+PLAYER_MOVEMENT_SPEED =10
 GRAVITY = 0
-PLAYER_JUMP_SPEED = 5
+PLAYER_JUMP_SPEED = 10
 
 # How many pixels to keep as a minimum margin between the character
 # and the edge of the screen.
@@ -289,7 +289,7 @@ class MyGame(arcade.Window):
 
 
         # See if the user got to the end of the level
-        if self.luna == 10 and self.level == 1:
+        if self.luna == 4 and self.level == 1:
             # Advance to the next level
             self.level = 2
 
