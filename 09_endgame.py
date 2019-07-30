@@ -16,9 +16,9 @@ SPRITE_PIXEL_SIZE = 128
 GRID_PIXEL_SIZE = (SPRITE_PIXEL_SIZE * TILE_SCALING)
 
 # Movement speed of player, in pixels per frame
-PLAYER_MOVEMENT_SPEED =5
+PLAYER_MOVEMENT_SPEED =25
 GRAVITY = 0
-PLAYER_JUMP_SPEED = 5
+PLAYER_JUMP_SPEED = 25
 
 # How many pixels to keep as a minimum margin between the character
 # and the edge of the screen.
@@ -27,8 +27,8 @@ RIGHT_VIEWPORT_MARGIN = 300
 BOTTOM_VIEWPORT_MARGIN = 250
 TOP_VIEWPORT_MARGIN = 200
 
-PLAYER_START_X = 640
-PLAYER_START_Y = 940
+PLAYER_START_X = 700
+PLAYER_START_Y = 1000
 
 class MyGame(arcade.Window):
     """
@@ -121,12 +121,12 @@ class MyGame(arcade.Window):
         if self.level ==-1:
             map_name = 'game_over.tmx'
         else:
-            map_name = f"mapa_nivel_{self.level}.tmx"
+            map_name = f"mapa_nivel_{level}.tmx"
         # Read in the tiled map
         my_map = arcade.read_tiled_map(map_name, TILE_SCALING)
 
-        self.background = arcade.load_texture("images/fondo1.jpg")
-        self.background2 = arcade.load_texture("images/fondo3.jpg")
+        self.background = arcade.load_texture("images/fondo3.jpg")
+        self.background2 = arcade.load_texture("images/fondo1.jpg")
 
 
         # -- Walls
@@ -284,14 +284,14 @@ class MyGame(arcade.Window):
 
             #Si llega a 0 vidas volver a comenzar el juego.
         if self.vidas == 0:
-            self.level =-1
+            self.level =+2
             self.setup(self.level)
 
 
         # See if the user got to the end of the level
-        if self.luna == 10 and self.level == 1:
+        if self.luna == 5 and self.level == 2:
             # Advance to the next level
-            self.level = 2
+            self.level = 1
 
             # Load the next level
             self.setup(self.level)
@@ -302,7 +302,7 @@ class MyGame(arcade.Window):
             changed_viewport = True
 
         # See if the user got to the end of the level
-        if self.luna == 20 and self.level==2:
+        if self.luna == 10 and self.level==1:
             # Advance to the next level
             self.level = 3
 

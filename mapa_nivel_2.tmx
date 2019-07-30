@@ -1,8 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="2019.04.25" orientation="orthogonal" renderorder="right-down" width="50" height="40" tilewidth="128" tileheight="128" infinite="0" nextlayerid="2" nextobjectid="1">
- <layer id="1" name="Tile Layer 1" width="50" height="40">
+<map version="1.2" tiledversion="2019.04.25" orientation="orthogonal" renderorder="right-down" width="84" height="46" tilewidth="128" tileheight="128" infinite="0" nextlayerid="33" nextobjectid="1">
+ <tileset firstgid="1" name="mi_patrones" tilewidth="129" tileheight="138" tilecount="18" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="32">
+   <image width="129" height="127" source="images/tiles/asteroide 128x128.png"/>
+  </tile>
+  <tile id="33">
+   <image width="129" height="129" source="images/tiles/asteroide grande inf der.png"/>
+  </tile>
+  <tile id="34">
+   <image width="129" height="129" source="images/tiles/asteroide grande inf izq.png"/>
+  </tile>
+  <tile id="35">
+   <image width="129" height="129" source="images/tiles/asteroide grande sup der.png"/>
+  </tile>
+  <tile id="36">
+   <image width="129" height="129" source="images/tiles/asteroide grande sup izq.png"/>
+  </tile>
+  <tile id="37">
+   <image width="129" height="129" source="images/tiles/asteroide2 128x128.png"/>
+  </tile>
+  <tile id="38">
+   <image width="129" height="129" source="images/tiles/asteroides 128x128.png"/>
+  </tile>
+  <tile id="39">
+   <image width="128" height="128" source="images/tiles/brickGrey.png"/>
+  </tile>
+  <tile id="40">
+   <image width="129" height="129" source="images/tiles/nave rota abajo.png"/>
+  </tile>
+  <tile id="41">
+   <image width="129" height="129" source="images/tiles/nave rota arriba.png"/>
+  </tile>
+  <tile id="42">
+   <image width="40" height="65" source="images/items/parte de la luna.png"/>
+  </tile>
+  <tile id="43">
+   <image width="82" height="101" source="images/items/parte de la luna_2.png"/>
+  </tile>
+  <tile id="44">
+   <image width="112" height="138" source="images/items/parte de la luna_3.png"/>
+  </tile>
+  <tile id="45">
+   <image width="103" height="98" source="images/items/parte de la luna_4.png"/>
+  </tile>
+  <tile id="47">
+   <image width="128" height="128" source="images/tiles/stoneHill_right.png"/>
+  </tile>
+  <tile id="48">
+   <image width="128" height="128" source="images/tiles/stoneMid.png"/>
+  </tile>
+  <tile id="49">
+   <image width="128" height="128" source="images/items/coinBronze.png"/>
+  </tile>
+  <tile id="51">
+   <image width="128" height="128" source="images/tiles/novisible.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="53" name="items" tilewidth="129" tileheight="138" tilecount="14" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="40" height="65" source="images/items/parte de la luna.png"/>
+  </tile>
+  <tile id="1">
+   <image width="82" height="101" source="images/items/parte de la luna_2.png"/>
+  </tile>
+  <tile id="2">
+   <image width="112" height="138" source="images/items/parte de la luna_3.png"/>
+  </tile>
+  <tile id="3">
+   <image width="103" height="98" source="images/items/parte de la luna_4.png"/>
+  </tile>
+  <tile id="4">
+   <image width="129" height="127" source="images/tiles/asteroide 128x128.png"/>
+  </tile>
+  <tile id="5">
+   <image width="129" height="129" source="images/tiles/asteroide grande inf der.png"/>
+  </tile>
+  <tile id="6">
+   <image width="129" height="129" source="images/tiles/asteroide grande inf izq.png"/>
+  </tile>
+  <tile id="7">
+   <image width="129" height="129" source="images/tiles/asteroide grande sup der.png"/>
+  </tile>
+  <tile id="8">
+   <image width="129" height="129" source="images/tiles/asteroide grande sup izq.png"/>
+  </tile>
+  <tile id="9">
+   <image width="129" height="129" source="images/tiles/asteroide2 128x128.png"/>
+  </tile>
+  <tile id="10">
+   <image width="129" height="129" source="images/tiles/asteroides 128x128.png"/>
+  </tile>
+  <tile id="11">
+   <image width="128" height="128" source="images/tiles/brickGrey.png"/>
+  </tile>
+  <tile id="12">
+   <image width="129" height="129" source="images/tiles/nave rota abajo.png"/>
+  </tile>
+  <tile id="13">
+   <image width="129" height="129" source="images/tiles/nave rota arriba.png"/>
+  </tile>
+ </tileset>
+ <layer id="28" name="plataforma" width="84" height="46" locked="1">
   <data encoding="base64" compression="zlib">
-   eJztwQEBAAAAgJD+r+4ICgAAAAAAAAAYH0AAAQ==
+   eJztWm0OwyAI5Sr+sRfo/c+2LAspYYBYddrJS8haq06efJiWEwDOkJCQkE5yTB7/JMlKm8VBEnjibdK8Ndxa/VbZH9SRrwfvk2OOki6Hc07anoVxnn1fjV+LP/5M6ivp+NYNlD3MrJ/FR1I4TqD/9wzutL1EHvAXkQv3iNI4jiSMley7Rb9RnPO1eXWehaxcH0rbaP6sPdwFI3nEfdsJNAbciR8lAfiOcf+METmf5kKAdePlKEg+2iMX7Y7edroz0J7evtpqo7v5twXus0/IQ6ufxyJ29gX1d8+7Cqlv4IMe56dM5gp80Mpr4AL6e02e5+/EVs8Rv4YWFyN+1qPF16ltr4aZPlOb26VvGYELWmz08hq4gL4a+b0vvPmIfzNEPsPnL5S+o/3aPv/h/FUbO6mtAqyZ42eh5cwUOUnGHbvUfD5sta4ehtsmHUvn2xUt7+izcr077vJpnQ1q62M4nprna/3ciqNSm+T7/xxj79pmLfc7gPpq67dO7vN8Pq2WUKuvWzGnWbVjo+ywxLdUa6nF4JOs2cOvp/ax1KbV2IGyPq/+MwRt2FoX19XqZ/FAn3u48vreTO48td2cY82+rbNGgu8YU7IvKQ7yfV6lDrzHXtztU4rzO8vM2uGQkJCQkrwAiYt4Tw==
+  </data>
+ </layer>
+ <layer id="29" name="monedas" width="84" height="46" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt1dEJACAIBUAHav/5GqD6EjHhbgKR5zMCAACAjNU9ABSRbYB5dHcfuwfgxY+AP7hFYAp9BaALucvmQq4AAADgtAEFPQG5
+  </data>
+ </layer>
+ <layer id="30" name="fondo" width="84" height="46" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt1rENwCAMBECmCftvmD4VhYE83A1ggWT9uzUAAABO0YvnPcXz/uDEP3Enu8wu1V0DrKE3xsg4IIW84mtH17svmMVuQT63CjdK7K/ENwMZ5AsAAECOF8C1AkA=
+  </data>
+ </layer>
+ <layer id="31" name="frente" width="84" height="46" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt1rsJACAQREGrsf8SzQVR8cDfTC4YvIVLCQAAAP6Vd38AAIAnrNyVI2/drdQ0AbFsih6N8JJWzzqHe4zu1a6JpimYYzMAAACcrgCoWwHv
+  </data>
+ </layer>
+ <layer id="32" name="no tocar" width="84" height="46" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJzt2EsOgzAMBUCfhbYgev8DNosuQXya1AHNSF6xeQqxFTkCAAAgYswOAJW4y/U5U1qbvtWzKfrLqTdZs/duzKXeLYOQ6ir/1iyDPGOs9+DSDNGvkONV6pkd4kYepYbsEHBT5lVd5tU+88b33vZ5S3rPB/zX1lzj972nN0tdZ94srXdM+ggAAOCYDw0qBas=
   </data>
  </layer>
 </map>
