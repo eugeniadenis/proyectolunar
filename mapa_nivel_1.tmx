@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="2019.04.25" orientation="orthogonal" renderorder="right-down" width="50" height="40" tilewidth="128" tileheight="128" infinite="0" nextlayerid="7" nextobjectid="1">
- <tileset firstgid="1" name="items" tilewidth="129" tileheight="138" tilecount="18" columns="0">
+<map version="1.2" tiledversion="2019.04.25" orientation="orthogonal" renderorder="right-down" width="67" height="31" tilewidth="128" tileheight="128" infinite="0" nextlayerid="18" nextobjectid="1">
+ <tileset firstgid="1" name="mi_patrones" tilewidth="129" tileheight="138" tilecount="16" columns="0">
   <grid orientation="orthogonal" width="1" height="1"/>
   <tile id="32">
    <image width="129" height="127" source="images/tiles/asteroide 128x128.png"/>
@@ -44,28 +44,34 @@
   <tile id="45">
    <image width="103" height="98" source="images/items/parte de la luna_4.png"/>
   </tile>
+  <tile id="70">
+   <image width="128" height="128" source="images/tiles/borde2.png"/>
+  </tile>
+  <tile id="71">
+   <image width="128" height="128" source="images/tiles/borde1.png"/>
+  </tile>
  </tileset>
  <layer id="13" name="plataforma" width="67" height="31">
   <data encoding="base64" compression="zlib">
-   eJzt2UEKgCAQQFGv0s5F9z9fu76rgjBn1P9g1sJnQKNaSqnOPbJFK2uLM+DMrC0i2AK2gC1gC+zeor2vRrY4Bp3z1e570bIFbIGoFhFv7DfuBWyBjC2i7t6MLaLYAraALdC7RfZvjifuBVZp0eMdu0qLHmwBW+CvFjPeJ+4Fov9pZ5sLP3YfNQ==
+   eJzt2cEJwCAQBdHfSqqJ/VcUDMjccgiJrjAP9iwMCyImyencWtS12GKwBWwBW8AWsAVsAVtgZotj0jlvuRewBWwBW8AWsAUqtlh191ZssYotYAvYAl+3qP7meOJewBawBWwBW+CvFjveJ+4FRofVf9wVprsAm8A04w==
   </data>
  </layer>
  <layer id="14" name="monedas" width="67" height="31">
   <data encoding="base64" compression="zlib">
-   eJzt1jENAAAIAzAE4V8fHnjISKtgB1uoAtjr6wC846aABLYKAEjlj4HfdBwgny0n0QAf8wEJ
+   eJzt1EENADAIA0AEzb++idhjob0zQCC0M8Bmp3w+efwU5EjOc/Ju0EqugRb6DrLJOMB+uvyN+/1xARS3Abk=
   </data>
  </layer>
- <layer id="15" name="fondo" width="67" height="31">
+ <layer id="15" name="fondo" width="67" height="31" visible="0">
   <data encoding="base64" compression="zlib">
    eJzt1YENgDAMA7BdA/9/yBFUIyz2AdWkrslaAGe4h+ddw/PeSnsP/+MP9ZnORUjWkHFuGs7mxnN80SkNPdbGTmmlz9hpd9bKdsjiJrM8BWACQA==
   </data>
  </layer>
- <layer id="16" name="frente" width="67" height="31">
+ <layer id="16" name="frente" width="67" height="31" visible="0">
   <data encoding="base64" compression="zlib">
    eJzt1tEJACAIBcCmaf8RmyAQDFK5+xeE9wTXAqCj/XsBAKCNzN8QmfWX1CELptDlumTDC7ce6RfTRTvuFuaQJV3oKlkHjXQB7w==
   </data>
  </layer>
- <layer id="17" name="no tocar" width="67" height="31">
+ <layer id="17" name="no tocar" width="67" height="31" visible="0">
   <data encoding="base64" compression="zlib">
    eJzt2N0KgCAMhuFdSz+K3f8F5kEgQWGYMqfvAzvqZNg+xIkAqMFpNwDzmKE7zmNc/qqeeanbJ/M8pq//NcQ6WjYyKStnSv5hjZP3uX3KHTMOS/ZYm3YTnVhjLdpNAJWR8WSGjIfM99a7h973GoAFuRxb93dvwb2WlNxrrd+qo89viRMFVQWr
   </data>
