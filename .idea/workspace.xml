@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5c19274-eb0f-48ed-ace2-5cb49e637478" name="Default Changelist" comment="se cambio el porcentaje de score por variable luna">
+      <change beforePath="$PROJECT_DIR$/.idea/ejemplojuego.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ejemplojuego.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/09_endgame.py" beforeDir="false" afterPath="$PROJECT_DIR$/09_endgame.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapa_nivel_1.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/mapa_nivel_1.tmx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapa_nivel_2.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/mapa_nivel_2.tmx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapa_nivel_3.tmx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,15 +17,11 @@
     <session id="956968381">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.38" value="1" />
-          <entry key="project.open.time.45" value="1" />
-          <entry key="project.open.time.73" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -41,12 +36,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="37" />
+          <entry key="py" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="37" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -65,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/09_endgame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="93" column="22" lean-forward="true" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
+            <state relative-caret-position="300">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -300,7 +295,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19494048" />
@@ -395,8 +390,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/09_endgame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="93" column="22" lean-forward="true" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
+        <state relative-caret-position="300">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
