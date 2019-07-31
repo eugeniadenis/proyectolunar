@@ -10,6 +10,7 @@ SCREEN_TITLE = "Proyecto Lunar"
 
 # Constants used to scale our sprites from their original size
 CHARACTER_SCALING = 0.2
+CHARACTER_BIGSCALING = 0.3
 TILE_SCALING = 0.5
 COIN_SCALING = 0.5
 SPRITE_PIXEL_SIZE = 128
@@ -87,6 +88,7 @@ class MyGame(arcade.Window):
 
         # Keep track of the luna
         self.luna = 0
+        self.tsluna = 0
 
         #Vidas
         self.vidas = 3
@@ -99,10 +101,20 @@ class MyGame(arcade.Window):
         self.coin_list = arcade.SpriteList()
 
         # Set up the player, specifically placing it at these coordinates.
-        self.player_sprite = arcade.Sprite("images/player_1/luna1.png", CHARACTER_SCALING)
-        self.player_sprite.center_x = PLAYER_START_X
-        self.player_sprite.center_y = PLAYER_START_Y
+        if self.level == 1:
+           self.player_sprite_chico = arcade.Sprite("images/player_1/luna1.png", CHARACTER_SCALING)
+           self.player_sprite_grande = arcade.Sprite("images/player_1/luna1.png", CHARACTER_BIGSCALING)
+        if self.level == 2:
+           self.player_sprite_chico = arcade.Sprite("images/player_1/luna2.png", CHARACTER_SCALING)
+           self.player_sprite_grande = arcade.Sprite("images/player_1/luna2.png", CHARACTER_BIGSCALING)
+        if self.level == 3:
+           self.player_sprite_chico = arcade.Sprite("images/player_1/luna3.png", CHARACTER_SCALING)
+           self.player_sprite_grande = arcade.Sprite("images/player_1/luna3.png", CHARACTER_BIGSCALING)
+        self.player_sprite_chico.center_x = PLAYER_START_X
+        self.player_sprite_chico.center_y = PLAYER_START_Y
+        self.player_sprite= self.player_sprite_chico
         self.player_list.append(self.player_sprite)
+
 
         # --- Load in a map from the tiled editor ---
 
@@ -125,8 +137,12 @@ class MyGame(arcade.Window):
         # Read in the tiled map
         my_map = arcade.read_tiled_map(map_name, TILE_SCALING)
 
-        self.background = arcade.load_texture("images/fondo1.jpg")
-        self.background2 = arcade.load_texture("images/fondo3.jpg")
+        if self.level == 1:
+            self.background = arcade.load_texture("images/fondo1.jpg")
+        if self.level == 2:
+            self.background = arcade.load_texture("images/fondo3.jpg")
+        if self.level == 3:
+            self.background = arcade.load_texture("images/fondo2.jpg")
 
 
         # -- Walls
@@ -190,7 +206,8 @@ class MyGame(arcade.Window):
 
         if self.level != -1:
             self.player_list.draw()
-
+        else:
+            self.player_list.draw()
         # Draw our luna on the screen, scrolling it with the viewport
         if self.level != -1:
             luna_text = f"luna: {self.luna}"
@@ -202,6 +219,8 @@ class MyGame(arcade.Window):
             vidas_text = f"vidas: {self.vidas}"
             arcade.draw_text(vidas_text, 5 + self.view_left, self.view_bottom + SCREEN_HEIGHT -30,
                         arcade.csscolor.YELLOW, 18)
+
+
 
 
 
@@ -233,9 +252,22 @@ class MyGame(arcade.Window):
         elif key == arcade.key.UP or key == arcade.key.W:
             self.player_sprite.change_y = 0
 
+
     def update(self, delta_time):
         """ Movement and game logic """
 
+        if self.tsluna > 0 and (time.time () - self.tsluna)> 1:
+            self.tsluna = 0
+            self.player_sprite_chico.center_x = self.player_sprite.center_x
+            self.player_sprite_chico.center_y = self.player_sprite.center_y
+            self.player_list = arcade.SpriteList()
+            self.player_sprite = self.player_sprite_chico
+            self.player_list.append(self.player_sprite)
+            self.physics_engine = arcade.PhysicsEnginePlatformer(self.player_sprite,
+                                                                 self.wall_list,
+                                                                 GRAVITY)
+            self.player_sprite.change_x = 0
+            self.player_sprite.change_y = 0
         # Call update on all sprites (The sprites don't do much in this
         # example though.)
         self.physics_engine.update()
@@ -252,21 +284,21 @@ class MyGame(arcade.Window):
             arcade.play_sound(self.collect_coin_sound)
             # Add one to the luna
             self.luna += 1
+            self.tsluna = time.time()
+            self.player_sprite_grande.center_x = self.player_sprite.center_x
+            self.player_sprite_grande.center_y = self.player_sprite.center_y
+            self.player_list = arcade.SpriteList()
+            self.player_sprite = self.player_sprite_grande
+            self.player_list.append(self.player_sprite)
+            self.physics_engine = arcade.PhysicsEnginePlatformer(self.player_sprite,
+                                                                 self.wall_list,
+                                                                 GRAVITY)
+            self.player_sprite.change_x = 0
+            self.player_sprite.change_y = 0
 
 
         # Track if we need to change the viewport
         changed_viewport = False
-
-        # Did the player fall off the map?
-        if self.player_sprite.center_y < -100:
-            self.player_sprite.center_x = PLAYER_START_X
-            self.player_sprite.center_y = PLAYER_START_Y
-
-            # Set the camera to the start
-            self.view_left = 0
-            self.view_bottom = 0
-            changed_viewport = True
-            arcade.play_sound(self.game_over)
 
         # Cuando el jugador toca algo que no deberia.
         if arcade.check_for_collision_with_list(self.player_sprite, self.dont_touch_list):
