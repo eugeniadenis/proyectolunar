@@ -53,7 +53,7 @@
  </tileset>
  <layer id="13" name="plataforma" width="67" height="31">
   <data encoding="base64" compression="zlib">
-   eJzt2cEJwCAQBdHfSqqJ/VcUDMjccgiJrjAP9iwMCyImyencWtS12GKwBWwBW8AWsAVsAVtgZotj0jlvuRewBWwBW8AWsAUqtlh191ZssYotYAvYAl+3qP7meOJewBawBWwBW+CvFjveJ+4FRofVf9wVprsAm8A04w==
+   eJzt2cEJwCAQAMFrJdXE/isKBmQ/kkdI9MQd8C0uByJGRJyuWwlVJWzR2AK2gC1gC9gCtoAtMLLFMWift3adi96Zd23RYwvYAraALZCxxay7N2OLWWwBW8AW+LpF9jfHE+cCtoAtYAvYAn+1WPE+cS7QOsz+486wqgs6+jUr
   </data>
  </layer>
  <layer id="14" name="monedas" width="67" height="31">
